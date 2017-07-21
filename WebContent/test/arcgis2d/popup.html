@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Get started with popups - 4.3</title>
+
+  <style>
+    html,
+    body,
+    #viewDiv {
+      padding: 0;
+      margin: 0;
+      height: 100%;
+      width: 100%;
+    }
+    
+    #instruction {
+      z-index: 99;
+      position: absolute;
+      top: 15px;
+      left: 50%;
+      padding: 5px;
+      margin-left: -175px;
+      height: 20px;
+      width: 350px;
+      background: rgba(25, 25, 25, 0.8);
+      color: white;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://js.arcgis.com/4.3/esri/css/main.css">
+  <script src="https://js.arcgis.com/4.3/"></script>
+
+  <script>
+    require([
+      "esri/tasks/Locator",
+      "esri/Map",
+      "esri/views/MapView",
+      "dojo/domReady!"
+    ], function(
+      Map,
+      MapView
+    ) {
+
+
+
+      // Create the Map
+      var map = new Map({
+          basemap: "streets",
+          ground: "world-elevation"
+      });
+
+      // Create the MapView
+      var view = new MapView({
+        container: "viewDiv",
+        map: map,
+        center: [-116.3031, 43.6088],
+        zoom: 12
+      });
+
+    
+</head>
+
+<body>
+  <div id="viewDiv"></div>
+  <div id="instruction">Click any location on the map to see its street address</div>
+</body>
+
+</html>

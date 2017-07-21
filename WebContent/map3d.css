@@ -1,0 +1,131 @@
+html, body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	background-color: rgb(238, 238, 238);
+}
+
+#mapDiv {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: auto;
+	background-color: rgb(238, 238, 238);
+}
+
+a {
+	color: #0366d6;
+}
+
+body, th, td, div {
+	font-size: 14px;
+}
+
+.header {
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: auto;
+	width: 100%;
+	padding: 0px;
+	z-index: 1000;
+	box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.4);
+	background-color: #485566;
+	background-color: rgba(72, 85, 102, 0.9);
+	float: left !important;
+	background-color: rgba(72, 85, 102, 0.9);
+}
+
+.header .logo {
+	float: left !important;
+	padding-left: 10px;
+}
+
+.header .title {
+	float: left !important;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	padding-left: 10px;
+	line-height: 40px;
+}
+
+.header .subtitle {
+	float: left !important;
+	font-size: 12px;
+	font-weight: normal;
+	color: #ffffff;
+	color: rgba(255, 255, 255, 0.8);
+	padding-left: 50px;
+	line-height: 40px;
+}
+
+@media screen and (max-width: 800px) {
+	.header .subtitle {
+		display: none;
+	}
+}
+
+.header .toolbar-item {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	text-align: center;
+	border-right: 1px solid #323e4f;
+	opacity: 0.6;
+	float: right;
+}
+
+.header .toolbar-item:hover {
+	opacity: 1;
+}
+
+.header .toolbar-item-selected {
+	background-color: rgba(0, 0, 0, 0.3);
+	opacity: 1;
+	border: none;
+	border-top: 2px solid #8491a1;
+	height: 38px;
+}
+
+.header .toolbar-item img {
+	margin-top: 8px;
+	height: 24px;
+	width: 24px;
+}
+
+.layer-check-item{
+	padding-left:5px;
+	margin-bottom:3px;
+	
+}
+.layer-check-label {
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.layer-split{
+	padding:2 0 2 5;
+	margin-bottom:3px;
+	//text-align:center;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+	
+}
+
+.HomeButton .home {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.esriSimpleSlider {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-width: 0px;
+	color: #FFF;
+}
+
+.esriSimpleSliderDecrementButton:hover, .esriSimpleSliderIncrementButton:hover
+	{
+	background-color: rgba(102, 102, 102, 0.90);
+}
